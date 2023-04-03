@@ -12,7 +12,7 @@ public class Decompress {
 
         FileInputStream fis = new FileInputStream(file);
         GZIPInputStream gzip = new GZIPInputStream(fis);
-        FileOutputStream fos = new FileOutputStream(file.getParent()+"/decom.jpg");
+        FileOutputStream fos = new FileOutputStream(file.getParent()+"/Decompressed");
 
         byte buff[] = new byte[1024];
         int len ;
