@@ -8,7 +8,7 @@ public class Compress {
     public static void convert(File file) throws IOException {
 
         FileInputStream fis = new FileInputStream(file);
-        FileOutputStream fos = new FileOutputStream(file.getParent()+"/yes.gz");
+        FileOutputStream fos = new FileOutputStream(file.getParent()+"/Compressed.gz");
         GZIPOutputStream gzip = new GZIPOutputStream(fos);
 
         byte buff[] = new byte[1024];
